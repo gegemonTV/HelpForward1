@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!--<com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/user_image_top_dialog"
+        android:layout_marginTop="16dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nickname_top_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:text="%username%"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textAppearance="?attr/textAppearanceHeadline4"/>
+        &lt;!&ndash;<TextView
+            android:id="@+id/email_profile_top_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="%username%"
+            android:textSize="14sp"
+            android:textAppearance="?attr/textAppearanceBody2"/>&ndash;&gt;
+        <TextView
+            android:id="@+id/statistics_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16sp"
+            android:layout_marginTop="8dp"
+            android:text="@string/statistics"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAppearance="?attr/textAppearanceBody1"/>
+
+        <LinearLayout
+            android:id="@+id/crystal_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/crystals_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16sp"
+                android:layout_weight="3"
+                android:text="@string/crystals"
+                android:textSize="16sp"
+                android:textAppearance="?attr/textAppearanceBody1"/>
+
+            <TextView
+                android:id="@+id/crystals_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="0"
+                android:textAllCaps="false"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textAppearance="?attr/textAppearanceBody1"/>
+
+            <ImageView
+                android:id="@+id/crystal_image_statistics"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="16sp"
+                app:srcCompat="@drawable/crystal" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@drawable/separator"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:id="@+id/karma_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/karma_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16sp"
+                android:layout_weight="3"
+                android:text="@string/karma_statistics"
+                android:textSize="16sp"
+                android:textAppearance="?attr/textAppearanceBody1"/>
+
+            <TextView
+                android:id="@+id/karma_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="0"
+                android:textAllCaps="false"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textAppearance="?attr/textAppearanceBody1"/>
+
+            <ImageView
+                android:id="@+id/karma_image_statistics"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="16sp"
+                app:srcCompat="@drawable/help_forward_transparen" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@drawable/separator"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:id="@+id/completed_tasks_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/completed_tasks_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16sp"
+                android:layout_weight="3"
+                android:text="@string/completed_tasks_statistics"
+                android:textSize="16sp"
+                android:textAppearance="?attr/textAppearanceBody1"/>
+
+            <TextView
+                android:id="@+id/completed_tasks_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="0"
+                android:textAllCaps="false"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textAppearance="?attr/textAppearanceBody1"/>
+
+            <ImageView
+                android:id="@+id/completed_tasks_image_statistics"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="16sp"
+                app:srcCompat="@drawable/tick_sign" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@drawable/separator"
+            android:layout_weight="1"/>-->
+
+
+    </LinearLayout>

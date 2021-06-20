@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".ProfileFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="?android:attr/colorPrimary"
+        android:id="@+id/upper_background"
+        android:elevation="8dp"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/user_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="24dp"
+        android:padding="5dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+        android:src="@mipmap/ic_launcher_foreground"
+        android:scaleType="centerCrop"
+        app:strokeColor="@android:color/darker_gray"
+        app:strokeWidth="7dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="8dp"
+        android:background="@color/white"/>
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8sp"
+        android:layout_below="@id/upper_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="56dp"
+                android:text="%username%"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textAppearance="?attr/textAppearanceHeadline4"/>
+            <TextView
+                android:id="@+id/company_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="%username%"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textAppearance="?attr/textAppearanceHeadline3"
+                android:visibility="visible"/>
+            <TextView
+                android:id="@+id/email_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="%username%"
+                android:textSize="14sp"
+                android:textAppearance="?attr/textAppearanceBody2"/>
+            <TextView
+                android:id="@+id/statistics_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16sp"
+                android:layout_marginTop="8dp"
+                android:text="@string/statistics"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAppearance="?attr/textAppearanceBody1"/>
+
+            <LinearLayout
+                android:id="@+id/crystal_line"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/crystals_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16sp"
+                    android:layout_weight="3"
+                    android:text="@string/crystals"
+                    android:textSize="16sp"
+                    android:textAppearance="?attr/textAppearanceBody1"/>
+
+                <TextView
+                    android:id="@+id/crystals_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="0"
+                    android:textAllCaps="false"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textAppearance="?attr/textAppearanceBody1"/>
+
+                <ImageView
+                    android:id="@+id/crystal_image_statistics"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="16sp"
+                    app:srcCompat="@drawable/ic_diamond" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@drawable/separator"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:id="@+id/karma_line"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/karma_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16sp"
+                    android:layout_weight="3"
+                    android:text="@string/karma_statistics"
+                    android:textSize="16sp"
+                    android:textAppearance="?attr/textAppearanceBody1"/>
+
+                <TextView
+                    android:id="@+id/karma_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="0"
+                    android:textAllCaps="false"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textAppearance="?attr/textAppearanceBody1"/>
+
+                <ImageView
+                    android:id="@+id/karma_image_statistics"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="16sp"
+                    app:srcCompat="@drawable/ic_baseline_star_border_24" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@drawable/separator"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:id="@+id/completed_tasks_line"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/completed_tasks_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16sp"
+                    android:layout_weight="3"
+                    android:text="@string/completed_tasks_statistics"
+                    android:textSize="16sp"
+                    android:textAppearance="?attr/textAppearanceBody1"/>
+
+                <TextView
+                    android:id="@+id/completed_tasks_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="0"
+                    android:textAllCaps="false"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textAppearance="?attr/textAppearanceBody1"/>
+
+                <ImageView
+                    android:id="@+id/completed_tasks_image_statistics"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="16sp"
+                    app:srcCompat="@drawable/ic_baseline_done_outline_24" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@drawable/separator"
+                android:layout_weight="1"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/edit_profile_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_profile"
+                android:layout_marginTop="16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tutorial_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tutorial"
+                android:layout_marginTop="16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/about_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About us"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

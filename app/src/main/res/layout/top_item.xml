@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="@+id/top_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="16dp"
+    android:layout_margin="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/user_place_top"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="9"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/user_image_top"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_weight="0"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center_vertical"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/username_top"
+            android:text="kcdsjs"
+            android:layout_weight="10"
+            android:layout_marginLeft="8dp"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_score_top"
+            android:text="10"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"/>
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_weight="0"
+            android:src="@drawable/ic_baseline_star_border_24"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

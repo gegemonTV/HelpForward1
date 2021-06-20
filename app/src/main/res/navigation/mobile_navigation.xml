@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_profile">
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.minerva.helpforward.ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+        <!--android:label="Profile"-->
+
+
+    <fragment
+        android:id="@+id/navigation_tasks"
+        android:name="com.minerva.helpforward.TasksFragment"
+        tools:layout="@layout/fragment_tasks" />
+        <!--android:label="Tasks"-->
+
+
+    <fragment
+        android:id="@+id/navigation_map"
+        android:name="com.minerva.helpforward.MapFragment"
+        tools:layout="@layout/fragment_map" />
+        <!--android:label="Map"-->
+
+    <fragment
+        android:id="@+id/navigation_shop"
+        android:name="com.minerva.helpforward.ShopFragment"
+        tools:layout="@layout/fragment_shop" />
+
+    <fragment
+        android:id="@+id/navigation_top"
+        android:name="com.minerva.helpforward.TopFragment"
+        tools:layout="@layout/fragment_top" />
+</navigation>
